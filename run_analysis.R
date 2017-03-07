@@ -77,22 +77,17 @@ colNames <- colnames(setwithActvtyLabels)
 
 #Cleaning Variables names
 
-for (i in 1:length(colNames)) 
-{
-  colNames[i] = gsub("\\()","",colNames[i])
-  colNames[i] = gsub("-std$","StdDev",colNames[i])
-  colNames[i] = gsub("-mean","Mean",colNames[i])
-  colNames[i] = gsub("^(t)","time",colNames[i])
-  colNames[i] = gsub("^(f)","freq",colNames[i])
-  colNames[i] = gsub("([Gg]ravity)","Gravity",colNames[i])
-  colNames[i] = gsub("([Bb]ody[Bb]ody|[Bb]ody)","Body",colNames[i])
-  colNames[i] = gsub("[Gg]yro","Gyro",colNames[i])
-  colNames[i] = gsub("AccMag","AccMagnitude",colNames[i])
-  colNames[i] = gsub("([Bb]odyaccjerkmag)","BodyAccJerkMagnitude",colNames[i])
-  colNames[i] = gsub("JerkMag","JerkMagnitude",colNames[i])
-  colNames[i] = gsub("GyroMag","GyroMagnitude",colNames[i])
-}
-
+colnames(setwithActvtyLabels) <- gsub("\\()","",colnames(setwithActvtyLabels))
+colnames(setwithActvtyLabels) <- gsub("-std$","StdDev",colnames(setwithActvtyLabels))
+colnames(setwithActvtyLabels)<- gsub("-mean","Mean",colnames(setwithActvtyLabels))
+colnames(setwithActvtyLabels) <- gsub("^(t)","time",colnames(setwithActvtyLabels))
+colnames(setwithActvtyLabels) <- gsub("^(f)","freq",colnames(setwithActvtyLabels))
+colnames(setwithActvtyLabels) <- gsub("([Gg]ravity)","Gravity",colnames(setwithActvtyLabels))
+colnames(setwithActvtyLabels) <- gsub("([Bb]ody[Bb]ody|[Bb]ody)","Body",colnames(setwithActvtyLabels))
+colnames(setwithActvtyLabels) <- gsub("[Gg]yro","Gyro",colnames(setwithActvtyLabels))
+colnames(setwithActvtyLabels)<- gsub("Acc","Accelerometer",colnames(setwithActvtyLabels))
+colnames(setwithActvtyLabels) <- gsub("Gyro","Gyroscope",colnames(setwithActvtyLabels))
+colnames(setwithActvtyLabels) <- gsub("Mag","Magnitude",colnames(setwithActvtyLabels))
 #5.From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject
 
 #Making second tidy data set

@@ -54,5 +54,79 @@ Use gsub function for pattern replacement to clean up the data labels.
 Section 5. Create a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 Per the project instructions, we need to produce only a data set with the average of each veriable for each activity and subject
-Contact GitHub API Training Shop Blog About
-© 2017 GitHub, Inc. Terms Privacy Security Status Help
+
+
+Signals
+The signals captured were from an accelerometer and a gyroscope integral to the cell phone worn by the subject.
+The set of variables that were estimated from these signals are:
+subject                                       : int 
+activity                                      : Factor w/ 6 levels 
+timeBodyAccelerometer-mean()-X                : num  
+timeBodyAccelerometer-mean()-Y                : num  
+timeBodyAccelerometer-mean()-Z                : num  
+timeBodyAccelerometer-std()-X                 : num  
+timeBodyAccelerometer-std()-Y                 : num  
+timeBodyAccelerometer-std()-Z                 : num  
+timeGravityAccelerometer-mean()-X             : num  
+timeGravityAccelerometer-mean()-Y             : num  
+timeGravityAccelerometer-mean()-Z             : num  
+timeGravityAccelerometer-std()-X              : num  
+timeGravityAccelerometer-std()-Y              : num  
+timeGravityAccelerometer-std()-Z              : num  
+timeBodyAccelerometerJerk-mean()-X            : num  
+timeBodyAccelerometerJerk-mean()-Y            : num  
+timeBodyAccelerometerJerk-mean()-Z            : num  
+timeBodyAccelerometerJerk-std()-X             : num  
+timeBodyAccelerometerJerk-std()-Y             : num  
+timeBodyAccelerometerJerk-std()-Z             : num 
+timeBodyGyro-mean()-X                         : num  
+timeBodyGyro-mean()-Y                         : num  
+timeBodyGyro-mean()-Z                         : num 
+timeBodyGyro-std()-X                          : num 
+timeBodyGyro-std()-Y                          : num 
+timeBodyGyro-std()-Z                          : num  
+timeBodyGyroJerk-mean()-X                     : num 
+timeBodyGyroJerk-mean()-Y                     : num 
+timeBodyGyroJerk-mean()-Z                     : num  
+timeBodyGyroJerk-std()-X                      : num 
+timeBodyGyroJerk-std()-Y                      : num 
+timeBodyGyroJerk-std()-Z                      : num 
+timeBodyAccelerometerMagnitude-mean()         : num  
+timeBodyAccelerometerMagnitude-std()          : num  
+timeGravityAccelerometerMagnitude-mean()      : num 
+timeGravityAccelerometerMagnitude-std()       : num 
+timeBodyAccelerometerJerkMagnitude-mean()     : num 
+timeBodyAccelerometerJerkMagnitude-std()      : num 
+timeBodyGyroMagnitude-mean()      		: num
+timeBodyGyroMagnitude-std()       		: num 
+timeBodyGyroJerkMagnitude-mean()              : num 
+timeBodyGyroJerkMagnitude-std()               : num 
+frequencyBodyAccelerometer-mean()-X           : num 
+frequencyBodyAccelerometer-mean()-Y           : num 
+frequencyBodyAccelerometer-mean()-Z           : num 
+frequencyBodyAccelerometer-std()-X            : num 
+frequencyBodyAccelerometer-std()-Y            : num 
+frequencyBodyAccelerometer-std()-Z            : num 
+frequencyBodyAccelerometerJerk-mean()-X       : num 
+frequencyBodyAccelerometerJerk-mean()-Y       : num 
+frequencyBodyAccelerometerJerk-mean()-Z       : num 
+frequencyBodyAccelerometerJerk-std()-X        : num 
+frequencyBodyAccelerometerJerk-std()-Y        : num 
+frequencyBodyAccelerometerJerk-std()-Z        : num 
+frequencyBodyGyro-mean()-X                    : num 
+frequencyBodyGyro-mean()-Y                    : num 
+frequencyBodyGyro-mean()-Z                    : num
+frequencyBodyGyro-std()-X                     : num
+frequencyBodyGyro-std()-Y                     : num 
+frequencyBodyGyro-std()-Z                     : num
+frequencyBodyAccelerometerMagnitude-mean()    : num
+frequencyBodyAccelerometerMagnitude-std()     : num
+frequencyBodyAccelerometerJerkMagnitude-mean(): num
+frequencyBodyAccelerometerJerkMagnitude-std() : num
+frequencyBodyGyroMagnitude-mean()             : num
+frequencyBodyGyroMagnitude-std()              : num
+frequencyBodyGyroJerkMagnitude-mean()         : num
+frequencyBodyGyroJerkMagnitude-std()          : num
+
+
+Numeric values were normalized and are presented between -1 and 1 with the exception for the subject number which is a positive integer.
